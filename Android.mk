@@ -48,7 +48,7 @@ LOCAL_MODULE := okhttp
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(okhttp_system_src_files)
 LOCAL_JARJAR_RULES := $(LOCAL_PATH)/jarjar-rules.txt
-LOCAL_JAVA_LIBRARIES := core-oj core-libart conscrypt tcmiface
+LOCAL_JAVA_LIBRARIES := core-oj core-libart conscrypt
 LOCAL_NO_STANDARD_LIBRARIES := true
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
 LOCAL_JAVA_LANGUAGE_VERSION := 1.7
@@ -59,7 +59,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := okhttp-nojarjar
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(okhttp_system_src_files)
-LOCAL_JAVA_LIBRARIES := core-oj core-libart conscrypt tcmiface
+LOCAL_JAVA_LIBRARIES := core-oj core-libart conscrypt
 LOCAL_NO_STANDARD_LIBRARIES := true
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
 LOCAL_JAVA_LANGUAGE_VERSION := 1.7
@@ -69,7 +69,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := okhttp-tests-nojarjar
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(okhttp_test_src_files)
-LOCAL_JAVA_LIBRARIES := core-oj core-libart okhttp-nojarjar junit4-target bouncycastle-nojarjar conscrypt tcmiface
+LOCAL_JAVA_LIBRARIES := core-oj core-libart okhttp-nojarjar junit4-target bouncycastle-nojarjar conscrypt
 LOCAL_NO_STANDARD_LIBRARIES := true
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
 LOCAL_JAVA_LANGUAGE_VERSION := 1.7
@@ -81,7 +81,7 @@ LOCAL_MODULE := okhttp-hostdex
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(okhttp_system_src_files)
 LOCAL_JARJAR_RULES := $(LOCAL_PATH)/jarjar-rules.txt
-LOCAL_JAVA_LIBRARIES := conscrypt-hostdex tcmiface-hostdex
+LOCAL_JAVA_LIBRARIES := conscrypt-hostdex
 LOCAL_ADDITIONAL_DEPENDENCIES := $(LOCAL_PATH)/Android.mk
 LOCAL_JAVA_LANGUAGE_VERSION := 1.7
 include $(BUILD_HOST_DALVIK_JAVA_LIBRARY)
